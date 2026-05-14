@@ -1,13 +1,18 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const jbMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-jb-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "3hx - The Lazy Dev",
-  description: "The Lazy Dev",
+  title: "3hx — Developer",
+  description: "3hx — Developer. discord · github · email",
 };
 
 export default function RootLayout({
@@ -16,8 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <body
+        suppressHydrationWarning
+        className={`${jbMono.variable} font-mono bg-term-bg text-term antialiased selection:bg-term selection:text-term-bg`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
