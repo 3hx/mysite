@@ -224,7 +224,7 @@ export default function Home() {
             <span className="size-2.5 rounded-full bg-[#febc2e] shadow-[0_0_6px_rgba(254,188,46,0.5)] shrink-0" />
             <span className="size-2.5 rounded-full bg-[#28c840] shadow-[0_0_6px_rgba(40,200,64,0.5)] shrink-0" />
             <span className="ml-2 opacity-70 max-[540px]:hidden">
-              3hx@3hx.me — ~/profile — zsh
+              dev@3hx.me — ~/profile — zsh
             </span>
             <span className="ml-auto opacity-45 tabular-nums">{date}</span>
           </div>
