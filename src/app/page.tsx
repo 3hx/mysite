@@ -13,7 +13,7 @@ const BOOT_LINES: BootLine[] = [
   { t: "[  ok  ] mounting /dev/identity ...", d: 110 },
   { t: "[  ok  ] establishing secure channel ...", d: 130 },
   { t: "[  ok  ] decrypting payload (rsa-4096) ...", d: 160 },
-  { t: "[  ok  ] loading profile: 3hx@3hx.me", d: 130 },
+  { t: "[  ok  ] loading profile: dev@3hx.me", d: 130 },
   { t: "[  ok  ] handshake complete.", d: 100 },
   { t: "", d: 60 },
   { t: "> whoami", d: 180, prompt: true },
